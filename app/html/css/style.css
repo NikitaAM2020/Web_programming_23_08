@@ -170,7 +170,7 @@ figcaption {
 .video {
   text-align: center;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 19px;
 }
 
 footer {
@@ -302,49 +302,43 @@ footer {
   padding: 0 0 0 70px;
 }
 
- .header-h1 h1 {
-    position: relative;
-    padding-bottom: .5rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    text-align: center;
-    color: #a2a027;
-  }
-  .header-h1 h1::before {
-    content: "";
-    position: absolute;
-    border-bottom: 2px solid #a2a027;
-    bottom: .25rem;
-    left: 50%;
-    width: 30%;
-    transform: translateX(-50%);
-  }
-  .header-h1 h1::after {
-    content: "";
-    position: absolute;
-    border-bottom: 2px solid #a2a027;
-    bottom: 0;
-    left: 50%;
-    width: 15%;
-    transform: translateX(-50%);
-  }
-  .header-h1-left h1 {
-    text-align: left;
-  }
-  .header-h1-left h1::before,
-  .header-h1-left h1::after {
-    left: 0;
-    transform: translateX(0);
-  }
-  .header-h1-right h1 {
-    text-align: right;
-  }
-  .header-h1-right h1::before,
-  .header-h1-right h1::after {
-    left: unset;
-    right: 0;
-    transform: translateX(0);
-  }
+.header-h1 h1 {
+  position: relative;
+  padding-bottom: .5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #a2a027;
+}
+
+.header-h1 h1:before {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #a2a027;
+  bottom: .25rem;
+  left: 50%;
+  width: 30%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header-h1 h1:after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #a2a027;
+  bottom: 0;
+  left: 50%;
+  width: 15%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .info {
-  font-size: 17px;
+  font-size: 19px;
+  text-align: justify;
+}
+
+.h3 {
+  text-align: center;
+  font-size: 19px;
 }
