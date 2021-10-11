@@ -1,0 +1,284 @@
+*
+    margin: 0
+body
+    background: #c9c760
+/* Налаштунки меню*/
+.btn-menu
+    color: #fff
+    background-color: #7D7B00 
+    padding: 7px
+    position: fixed
+    top: 1%
+    right: 2%
+    cursor: pointer
+    transition: right .23s
+    width: 35px
+    height: 35px
+    transform: translateZ(0)
+    backface-visibility: hidden
+.btn-menu span
+    display: block
+    height: 3px
+    background-color: #fff
+    margin: 5px 0 0
+    transition: all .1s linear .23s
+    position: relative
+.hidden-menu
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    position: fixed
+    list-style: none  
+    padding: 0 5px
+    margin: 0
+    box-sizing: border-box
+    width: 20%
+    background-color: #7D7B00
+    height: 100%
+    top: 0
+    right: -20%
+    transition: right .2s
+    z-index: 200
+    transform: translateZ(0)
+    backface-visibility: hidden
+    align-items: center
+.hidden-menu li
+    margin-bottom: 20px
+    padding: 10px 0
+.hidden-menu li a
+    text-decoration: none
+    font-size: 25px
+    color: #fff  
+.hidden-menu li a:hover
+    text-decoration: underline   
+.hidden-menu-ticker
+    display: none
+.btn-menu span.first
+    margin-top: 0
+.hidden-menu-ticker:checked~.btn-menu
+    right: 20%
+.hidden-menu-ticker:checked~.hidden-menu
+    right: 0
+.hidden-menu-ticker:checked~.btn-menu span.first 
+  transform: rotate(45deg)
+  top: 8px
+.hidden-menu-ticker:checked~.btn-menu span.second
+    opacity: 0
+.hidden-menu-ticker:checked~.btn-menu span.third
+    transform: rotate(-45deg)
+    top: -8px
+@media ( max-width:425px  )
+  .hidden-menu
+    width: 80%;
+    right: -80%;
+  .hidden-menu-ticker:checked ~ .btn-menu
+    right: 80%;
+
+    
+.header
+    background: #879 url(../img/speace.jpg)
+    text-align: center
+    
+
+main
+    margin: 0 65px
+    // background: #fffee2
+    
+.about_anime img
+    width: 200px
+    height: auto
+
+.leftimg 
+    float: left
+    margin: 7px 7px 7px 0
+.about_anime p
+    font-size: 19px
+    margin: 8px 0
+    text-align: justify
+.manga
+    text-align: center
+.manga img
+    width: 65%
+    height: auto
+figcaption
+    font-weight: 600
+    font-size: 17px
+.video 
+    text-align: center
+    font-weight: 600
+    font-size: 19px
+
+footer
+    font-style: italic
+    font-size: 17px
+    
+hr
+    height: 5px
+    background-color: #fffee2
+
+.six 
+  background: linear-gradient(70deg, #c9c778, #a2a027, #c9c778) 
+  padding: 50px 20px
+  text-align: center
+
+.six h1 
+  font-weight: normal
+  font-family: 'Merriweather', serif
+  position: relative
+  display: inline-block
+  margin: 0
+  line-height: 1
+  color: #fffee2
+  letter-spacing: 10px
+  font-size: 50px
+  padding: .4em 1em .55em
+
+.six h1:before, .six h1:after 
+  content: ""
+  position: absolute
+  width: 60%
+  height: .1em
+  background: #294200 
+
+.six h1:before 
+  left: 0
+  top: 0
+
+.six h1:after 
+  right: 0
+  bottom: 0
+
+.six h1 span:before, .six h1 span:after 
+  content: "" 
+  position: absolute
+  width: .65em
+  height: .65em
+  border: .1em solid #294200
+  border-radius: 50%
+  box-sizing: border-box
+
+.six h1 span:before 
+  top: -.55em
+  left: -.325em
+
+.six h1 span:after 
+  bottom: -.55em
+  right: -.325em
+
+@media (max-width: 600px) 
+  .six h1
+       font-size: 2em
+
+@media (max-width: 450px) 
+  .six h1 
+      font-size: 1.5em
+
+.four 
+  background: #c9c760
+  padding: 50px 20px
+  text-align: center
+
+.four h2 
+  font-family: 'Merriweather', serif
+  position: relative
+  color: #fffee2
+  font-size: 50px
+  font-weight: normal
+  padding: 8px 20px 7px 20px
+  border-top: 4px solid
+  border-left: 4px solid
+  display: inline-block
+  margin: 0
+  line-height: 1
+
+.four h2:before 
+  content: ""
+  position: absolute
+  width: 28px
+  height: 28px
+  top: -28px
+  left: -28px
+  border: 4px solid #fffee2
+  box-sizing: border-box
+
+@media (max-width: 450px) 
+  .four h2 
+      font-size: 36px
+  .four h2:before 
+    width: 20px
+    height: 20px
+    top: -20px
+    left: -20px
+
+footer
+  background: #c9c760
+  padding: 0 0 0 70px
+
+.header-h1 h1 
+    position: relative
+    padding-bottom: .5rem
+    font-size: 1.5rem
+    text-transform: uppercase
+    text-align: center
+    color: #a2a027
+  
+.header-h1 h1:before 
+    content: ""
+    position: absolute
+    border-bottom: 2px solid #a2a027
+    bottom: .25rem
+    left: 50%
+    width: 30%
+    transform: translateX(-50%)
+  
+.header-h1 h1:after 
+    content: ""
+    position: absolute
+    border-bottom: 2px solid #a2a027
+    bottom: 0
+    left: 50%
+    width: 15%
+    transform: translateX(-50%)
+.info
+  font-size: 19px
+  text-align: justify
+
+.h3
+  text-align: center
+  font-size: 19px
+
+.header-h2-left  
+  position: relative
+  text-align: center
+  margin-bottom: .5rem
+
+.header-h2-left  h2 
+  display: inline-block
+  background: #fff
+  margin-bottom: 0
+  padding: 0.25rem .875rem
+  border-left: .125rem solid #a2a027
+  border-right: .125rem solid #a2a027
+  font-size: 2rem
+  text-transform: uppercase
+  color: #7d7800
+
+.header-h2-left  h2:after 
+  content: ""
+  position: absolute
+  background: #a2a027
+  height: .135rem
+  left: 0
+  top: 50%
+  width: 100%
+  transform: translateY(-50%)
+  z-index: -999
+
+.header-h2-left 
+  text-align: left
+  
+.header-h2-left h2
+  padding-left: 0
+  border-left: none
+
